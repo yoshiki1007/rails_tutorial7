@@ -87,15 +87,38 @@ footer {
   small {
     float: left;
   }
+
   ul {
     float: right;
     list-style: none;
+
     li {
       float: left;
       margin-left: 15px;
     }
   }
 }
+
+@media (max-width: 800px) {
+  footer {
+    small {
+      display: block;
+      float: none;
+      margin-bottom: 1em;
+    }
+
+    ul {
+      float: none;
+      padding: 0;
+
+      li {
+        float: none;
+        margin-left: 0;
+      }
+    }
+  }
+}
+
 /* miscellaneous */
 
 .debug_dump {
@@ -162,4 +185,10 @@ input, textarea, select, .uneditable-input {
 
 input {
   height: auto !important;
+}
+
+/* Dropdown menu */
+
+.dropdown-menu.active {
+  display: block;
 }
